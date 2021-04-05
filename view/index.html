@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Len-Rest-Api</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/ruang-admin.min.css" rel="stylesheet">
+  <script>
+    window['CboxReady'] = function (Cbox) {
+      Cbox('button', '6-852538-vNvLf8');
+    }
+    </script>
+    <script src="https://static.cbox.ws/embed/1.js" async></script>
+    </head>
+    
+    <body id="page-top">
+      <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-text mx-3">Len-Api</div>
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-code"></i>
+          <span>Beranda</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        API Features
+      </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="fas fa-fw fa-arrow-down"></i>
+          <span>Social Media API</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Media Features</h6>
+            <a class="collapse-item" href="api/fbdl?url=LINKNYA&apikey=apikeylu">Facebook Downloader</a>
+            <a class="collapse-item" href="api/tiktokmp4?url=https://www.tiktok.com/@animemusikvideos/video/6946753195704175874&apikey=apikeymu">Tiktok No Wm</a>
+            <a class="collapse-item" href="api/ytmp3?url=https://www.youtube.com/watch?v=fm-nXA-K0Dg&list=RDfm-nXA-K0Dg&apikey=apikeymu">Youtube Audio</a>
+            </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
+          aria-controls="collapseAnime">
+          <i class="fas fa-fw fa-bullseye"></i>
+          <span>Anime & Manga API</span>
+        </a>
+        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Anime/Manga Features</h6>
+            <a class="collapse-item" href="api/anime/komiku?judul=boruto&apikey=apikeymu">Komiku Searcher</a>
+          </div>
+        </div>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
+          aria-controls="collapseother">
+          <i class="fab fa-fw fa-wpforms"></i>
+          <span>Other API</span>
+        </a>
+        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Tools Menu</h6>
+            <a class="collapse-item" href="api/gsmarena?merek=Asus&seri=zenfone pro max m2&apikey=apikeymu">GSM Arena</a>
+            <a class="collapse-item" href="api/nulis?text=TukangBanned&apikey=apikeymu">Nulis Buku</a>
+            <a class="collapse-item" href="api/infonpm?nama=@adiwajshing/baileys&apikey=apikeymu">Info NPM Module</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+<div class="version"><b>Contact me</b></div>
+      </div>
+      <li class="nav-item">
+          
+            <a class="nav-link collapsed" href="/about">
+            <i class="fas fa-fw fa-info"></i>
+                    <span>About Me</span>
+            </a>
+      </li>
+      <li class="nav-item">
+          
+            <a class="nav-link collapsed" href="https://wa.me/6281224050965">
+            <i class="fab fa-fw fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://github.com/Lendra0406">
+            <i class="fab fa-fw fa-github"></i>
+                    <span>Github</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://www.youtube.com/c/LendraCH">
+            <i class="fab fa-fw fa-youtube"></i>
+                    <span>Youtube</span>
+            </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version"><b>Clone By Lendra</b></div>
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-1 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-tasks fa-fw"></i>
+                <span class="badge badge-success badge-counter">1</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Programming Skill
+                </h6>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Belajar
+                      <div class="small float-right"><b>20%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Copas
+                      <div class="small float-right"><b>50%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item align-items-center" href="#">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Nembak
+                      <div class="small float-right"><b>50%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="/image.png" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small">Thanos</span>
+              </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Topbar -->
+
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Beranda</li>
+            </ol>
+          </div>
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card h-100">
+            <div class="card-body">
+            <div class="row align-items-left">
+            <div class="col mr-2">
+            <div class="text-xs font-weight-bold text-uppercase mb-1">Total API</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+            <div class="mt-2 mb-0 text-muted text-xs">
+            <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 0%</span>
+            <span>Since last month</span>
+            </div>
+            </div>
+            <div class="col-auto">
+            <i class="fas fa-calendar fa-2x text-primary"></i>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+              <div class="card-body">
+              <div class="row align-items-center">
+              <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-uppercase mb-1">Info</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">Menuju Ramadhan</div>
+              <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 
+              <b id="time"></b><br></span>
+              <div class="mt-2 mb-0 text-muted text-xs">
+              </div>
+              </div>
+              <div class="col-auto">
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <script>
+                // Akhir Hitungan Mundur
+                var countDownDate = new Date("Apr 12, 2021 00:00:00").getTime();
+        
+                // Update Hitungan Mundur Setiap 1 Detik
+                var x = setInterval(function() {
+        
+                  // Mengambil Tanggal Dan Waktu
+                  var now = new Date().getTime();
+        
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+        
+                  // Kalkulator Waktu Hari, Jam, Menit, Detik 
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                  // Menampilkan Hasil Di Dalam element Menggunakan id="time"
+                  document.getElementById("time").innerHTML = days + "Hari  " + hours + "Jam " + minutes + "Menit " + seconds + "Detik ";
+        
+                  // Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("time").innerHTML = "Berakhir";
+                  }
+                }, 1000);
+              </script>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card h-100">
+            <div class="card-body">
+            <div class="row no-gutters align-items-right">
+            <div class="col mr-2">
+            <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800">
+            <div class="visitors" id="visitors">00</div>
+            </div>
+            <div class="mt-2 mb-0 text-muted text-xs">
+            
+            </span>
+            <span>This web visitor</span>
+            </div>
+            </div>
+            <div class="col-auto">
+            <i class="fas fa-eye fa-2x text-primary"></i>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <script>
+              function getvisitor(){
+                          var xhr = new XMLHttpRequest();
+                          var url = 'https://api.countapi.xyz/hit/len-api.herokuapp.com/visits';
+                          xhr.onloadend = function(){
+                         data = JSON.parse(this.responseText);
+              document.getElementById("visitors").textContent = data.value
+                          };
+                          xhr.open("GET", url, true);
+                          xhr.send();
+              }
+              
+            </script>
+          <div class="row mb-3">
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Info Recoder</div>
+                      <br>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">Lendra</div>
+                      <div class="mt-2 mb-0 text-muted text-xs">
+                        <span class="text-success mr-2"> 15. y.o Programmer</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-users fa-2x text-info"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- Pie Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card mb-4">
+              	<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+              	<h6 class="m-0 font-weight-bold text-primary">Progamming Skill</h6>
+                  <div class="dropdown no-arrow">
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Select Periode</div>
+                      <a class="dropdown-item" href="#">Today</a>
+                      <a class="dropdown-item" href="#">Week</a>
+                      <a class="dropdown-item" href="#">This Year</a>
+                    </div>
+                  </div>
+                </div>
+<div class="card-body">
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Belajar
+                      <div class="small float-right"><b>20%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Copas
+                      <div class="small float-right"><b>70</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="small text-gray-500">Nembak
+                      <div class="small float-right"><b>50%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                  </div>
+                  <div class="mb-3">
+                  </div>
+                </div>
+                <div class="card-footer text-center">
+                </div>
+              </div>
+            </div>
+            
+          <!--Row-->
+
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Suka Dengan API Nya ? Boleh Dong, Follow Github Gw : <a href="https://github.com/Lendra0406"
+                  class="btn btn-primary btn-sm" target="_blank"><i class="fab fa-fw fa-github"></i>&nbsp;GitHub</a></p>
+            </div>
+          </div>
+
+        </div>
+        <!---Container Fluid-->
+      </div>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; 2021 - Developed By
+              <b><a href="https://github.com/Lendra0406" target="_blank">Lendra</a></b>
+            </span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/ruang-admin.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>  
+</body>
+
+</html>
